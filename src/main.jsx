@@ -6,8 +6,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Success from "./pages/Success.jsx";
 import Homee from "./pages/Homee.jsx";
 import { Provider } from "react-redux";
-import store from "./redux/store.js";
+// import store from "./redux/store.js";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import store from './redux/store';
+
 
 const appRouter = createBrowserRouter([
   {
