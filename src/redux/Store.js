@@ -2,7 +2,7 @@ import {configureStore} from '@reduxjs/toolkit'
 import CartSlice from './slice/CartSlice'
 import CategorySlice from './slice/CategorySlice'
 import SearchSlice from './slice/SearchSlice'
-const store = configureStore({
+const Store = configureStore({
     reducer:{
         cart : CartSlice,
         category : CategorySlice,
@@ -10,4 +10,4 @@ const store = configureStore({
     }
 });
 
-export default store;
+export default Store;

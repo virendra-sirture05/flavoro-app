@@ -5,12 +5,12 @@ import "./index.css";
 import { Provider } from "react-redux";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";;
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
-import store from './redux/store.js';
+import Store from "./redux/Store.js";
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Provider store={store}>
+    <Provider store={Store}>
       <App/>
     </Provider>
   </StrictMode>
