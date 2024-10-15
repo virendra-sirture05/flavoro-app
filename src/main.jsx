@@ -11,24 +11,10 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import store from './redux/store';
 
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/home",
-    element: <Homee />,
-  },
-  {
-    path: "/success",
-    element: <ProtectedRoute element={<Success/>}/>
-  },
-]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={store}>
-      <RouterProvider router={appRouter} />
+      <App/>
     </Provider>
   </StrictMode>
 );
